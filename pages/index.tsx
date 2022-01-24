@@ -17,7 +17,7 @@ export default function Home() {
       <div className="flex flex-row">
         <h1 className="text-xl sm:text-3xl text-white my-5 font-display">
           Hola, I am{" "}
-          <span className="text-[#f19050] font-bold">
+          <span className="text-[#f19050] font-bold text-4xl">
             <Typewriter
               options={{
                 strings: ["Prajwal Prakash", , "Prajwal P"],
@@ -33,7 +33,7 @@ export default function Home() {
         I am a{" "}
         <span className="text-[#50AEF1] font-bold">Computer Programmer</span>,
         <span className="text-[#50AEF1] font-bold"> Full Stack Developer</span>{" "}
-        & a&nbsp;
+        &&nbsp;
         <span className="text-[#50AEF1] font-bold"> Problem Solver</span>. I
         like to develop pretty sustainable solutions using latest technologies.
       </p>
@@ -44,7 +44,7 @@ export default function Home() {
         </span>
         , studying&nbsp;
         <span className="text-[#50AEF1] font-bold">
-          Bachelors in Computer Science
+          Bachelors in Computer Science Engineering
         </span>
         .
       </p>
