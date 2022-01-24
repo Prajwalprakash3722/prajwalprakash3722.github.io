@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Image from "next/image";
 import Typewriter from "typewriter-effect";
 
@@ -34,11 +33,15 @@ export default function Home() {
         <span className="text-[#50AEF1] font-bold">Computer Programmer</span>,
         <span className="text-[#50AEF1] font-bold"> Full Stack Developer</span>{" "}
         &&nbsp;
-        <span className="text-[#50AEF1] font-bold"> Problem Solver</span>. I
-        like to develop pretty sustainable solutions using latest technologies.
+        <span className="text-[#50AEF1] font-bold">Problem Solver</span>. I like
+        to develop pretty sustainable solutions using latest technologies.&nbsp;
+        Till now Most of my work has been in Web Development and Backend
+        Engineering.&nbsp; I am very keenly interested in&nbsp;
+        <span className="text-[#50AEF1] font-bold">Operating Systems</span>
+        &nbsp; as of now
       </p>
       <p className="text-white sm:full lg:w-3/4 text-base sm:text-xl my-4 font-body">
-        I am currently a student at&nbsp;
+        I am currently a second year undergrad student at&nbsp;
         <span className="text-[#50AEF1] font-bold">
           R V College Of Engineering
         </span>
@@ -48,8 +51,37 @@ export default function Home() {
         </span>
         .
       </p>
-      <div className="text-[#ecdcdc] my-8 flex bg-black rounded-lg bg-opacity-30 p-4 backdrop-filter backdrop-blur-md lg:w-1/4">
-        Still in Dev Mode....
+      <div className="text-[#ecdcdc] my-8 flex bg-black rounded-lg bg-opacity-30 p-4 backdrop-filter backdrop-blur-md lg:w-1/4 justify-evenly">
+        <a href="https://www.github.com/prajwalprakash3722" target="blank">
+          <Image
+            src="/icons/github.svg"
+            alt="Github"
+            className="h-8 w-8"
+            width={32}
+            height={32}
+          />
+        </a>
+        <a href="mailto:prajwalprakash3722@gmail.com" target="blank">
+          <Image
+            src="/icons/gmail.png"
+            alt="Gmail"
+            className="h-8 w-8"
+            width={32}
+            height={32}
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/prajwal-prakash-a3b9931b3/"
+          target="blank"
+        >
+          <Image
+            src="/icons/linkedin.png"
+            alt="LinkedIn"
+            className="h-8 w-8"
+            width={32}
+            height={32}
+          />
+        </a>
       </div>
       <div className="absolute flex bottom-0 p-4 text-center">
         <p className="text-[#bbb] font-body text-sm">
