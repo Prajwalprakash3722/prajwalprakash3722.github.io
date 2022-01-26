@@ -1,11 +1,11 @@
-import Image from "next/image";
+/* eslint-disable @next/next/no-img-element */
 import Typewriter from "typewriter-effect";
 
 export default function Home() {
   return (
     <div className="relative container w-[80%] md:w-[60%] mx-auto py-[5rem] min-h-screen">
       <div className="logo mb-4 md:mb-12 h-24 w-24 p-1 sm:h-20 sm:w-20 rounded-full bg-gradient-to-r from flex items-center justify-center">
-        <Image
+        <img
           src="/prajwal.PNG"
           alt="Prajwal P"
           className="sm:h-[4.5rem] sm:w-[4.5rem] rounded-full object-cover"
@@ -46,7 +46,7 @@ export default function Home() {
       </p>
 
       <div className="flex flex-row justify-center items-center mt-4">
-        <span className="text-[#f19050] font-bold text-ellipsis text-xl">
+        <span className="text-[#d9f489] font-bold text-ellipsis text-xl">
           <Typewriter
             options={{
               strings: [
@@ -65,7 +65,7 @@ export default function Home() {
 
       <div className="text-[#ecdcdc] my-8 flex bg-black rounded-lg bg-opacity-30 p-4 backdrop-filter backdrop-blur-md lg:w-1/4 justify-evenly">
         <a href="https://www.github.com/prajwalprakash3722" target="blank">
-          <Image
+          <img
             src="/icons/github.svg"
             alt="Github"
             className="h-8 w-8"
@@ -74,7 +74,7 @@ export default function Home() {
           />
         </a>
         <a href="mailto:prajwalprakash3722@gmail.com" target="blank">
-          <Image
+          <img
             src="/icons/gmail.png"
             alt="Gmail"
             className="h-8 w-8"
@@ -86,7 +86,7 @@ export default function Home() {
           href="https://www.linkedin.com/in/prajwal-prakash-a3b9931b3/"
           target="blank"
         >
-          <Image
+          <img
             src="/icons/linkedin.png"
             alt="LinkedIn"
             className="h-8 w-8"
