@@ -36,7 +36,7 @@ export default function Home() {
         .&nbsp;I like to develop pretty sustainable solutions using latest
         technologies.&nbsp;Till now Most of my work has been in&nbsp;
         <span className="text-[#50AEF1] font-bold">Web Development</span>
-        and&nbsp;
+        &nbsp;&&nbsp;
         <span className="text-[#50AEF1] font-bold">Backend Engineering</span>
         .&nbsp; I am very keenly interested in&nbsp;
         <span className="text-[#50AEF1] font-bold">Operating Systems</span>
