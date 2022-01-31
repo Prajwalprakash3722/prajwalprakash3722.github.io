@@ -97,9 +97,24 @@ export default function Home() {
       </div>
       <div className="absolute flex bottom-0 p-4 text-center">
         <p className="text-[#bbb] font-body text-sm">
-          Made using <span className="text-[#50AEF1]">Next.JS</span>,&nbsp;
-          <span className="text-[#50AEF1]">Tailwind</span>,&nbsp;
-          <span className="text-[#50AEF1]">TypeScript</span>
+          Made using{" "}
+          <span className="text-[#50AEF1]">
+            <a href="https://nextjs.org/" target="blank">
+              Next.JS
+            </a>
+          </span>
+          ,&nbsp;
+          <span className="text-[#50AEF1]">
+            <a href="https://tailwindcss.com/" target="blank">
+              Tailwind
+            </a>
+          </span>
+          ,&nbsp;
+          <span className="text-[#50AEF1]">
+            <a href="https://www.typescriptlang.org/" target="blank">
+              TypeScript
+            </a>
+          </span>
         </p>
       </div>
     </div>
