@@ -1,1 +1,1 @@
-export const API_LINK = 'https://prajwalprakash3722-github-io-f16qu4zij-prajwalprakash3722.vercel.app/api/';
+export const API_LINK = 'https://haste-bin-clone.herokuapp.com/blog';

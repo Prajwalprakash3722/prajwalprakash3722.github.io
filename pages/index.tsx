@@ -17,7 +17,7 @@ export default function Home() {
 
   React.useEffect(() => {
     axios
-      .get(API_LINK + "article", {
+      .get(API_LINK, {
         headers: {},
       })
       .then((res) => {

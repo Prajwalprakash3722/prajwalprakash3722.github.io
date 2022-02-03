@@ -24,11 +24,12 @@ const Card = ({ data }: IProps) => {
         <div>
           <a
             href={data.link}
-            className="block mt-2 text-2xl font-semibold  transition-colors duration-200 transform text-white hover:text-gray-300 hover:underline"
+            className="block mt-2 text-2xl font-display  transition-colors duration-200 transform text-white hover:text-gray-300 hover:underline"
+            target="blank"
           >
             {data.title}
           </a>
-          <p className="mt-2 text-sm text-gray-400">
+          <p className="mt-2 text-sm text-gray-400 font-medium">
             {data.description.substring(0, 200) + "..."}
           </p>
         </div>
