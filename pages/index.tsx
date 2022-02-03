@@ -16,9 +16,16 @@ export default function Home() {
   ]);
 
   React.useEffect(() => {
-    axios.get(API_LINK + "article").then((res) => {
-      setData(res.data);
-    });
+    axios
+      .get(API_LINK + "article", {
+        headers: {},
+      })
+      .then((res) => {
+        setData(res.data);
+      })
+      .catch((err) => {
+        console.error(err.message);
+      });
   }, []);
 
   return (

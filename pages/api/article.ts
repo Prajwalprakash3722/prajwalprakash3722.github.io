@@ -1,9 +1,18 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 const { parse } = require('rss-to-json');
 import cheerio from "cheerio";
+import NextCors from 'nextjs-cors';
 
 
 export default async function handler(req, res) {
+
+  await NextCors(req, res, {
+    // Options
+    methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'],
+    origin: '*',
+    optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
+  });
+
 
   const url = 'https://medium.com/feed/@prajwalprakash3722';
   const feed = await parse(url);
