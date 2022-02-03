@@ -13,7 +13,7 @@ interface IProps {
 
 const Card = ({ data }: IProps) => {
   return (
-    <div className="max-w-2xl mx-auto overflow-hidden rounded-lg shadow-md bg-gray-800">
+    <div className="max-w-2xl mx-auto overflow-hidden rounded-lg shadow-md bg-gray-800 transform transition duration-300 hover:scale-110 transform-gpu">
       <img
         className="object-cover w-full h-64"
         src={data.image}

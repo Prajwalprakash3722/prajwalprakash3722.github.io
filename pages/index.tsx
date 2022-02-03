@@ -126,7 +126,7 @@ export default function Home() {
           <h1 className="text-4xl text-center text-white my-4 font-display">
             Blog
           </h1>
-          <div className="grid grid-col-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-col-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {data.map((item, index) => (
               <Card key={index} data={item} />
             ))}
