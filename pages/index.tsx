@@ -16,7 +16,7 @@ export default function Home() {
   ]);
 
   React.useEffect(() => {
-    axios.get("http://localhost:3000/api/" + "article").then((res) => {
+    axios.get(API_LINK + "article").then((res) => {
       setData(res.data);
     });
   }, []);
