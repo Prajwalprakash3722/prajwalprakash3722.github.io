@@ -120,6 +120,15 @@ export default function Home() {
             height={32}
           />
         </a>
+        <a href="/Prajwal_P.pdf" target="blank">
+          <img
+            src="/icons/resume.png"
+            alt="Resume"
+            className="h-8 w-8"
+            width={32}
+            height={32}
+          />
+        </a>
       </div>
       {data && data.length > 1 && (
         <div>
