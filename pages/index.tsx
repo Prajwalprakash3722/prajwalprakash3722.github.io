@@ -1,9 +1,10 @@
-/* eslint-disable @next/next/no-img-element */
-import axios from "axios";
+import Card, { Props } from "../components/Card";
+
+import { API_LINK } from "../Misc/api";
 import React from "react";
 import Typewriter from "typewriter-effect";
-import Card, { Props } from "../components/Card";
-import { API_LINK } from "../Misc/api";
+/* eslint-disable @next/next/no-img-element */
+import axios from "axios";
 
 export default function Home() {
   const [data, setData] = React.useState<Props[]>([
@@ -40,22 +41,22 @@ export default function Home() {
         />
       </div>
       <div className="flex flex-row">
-        <h1 className="text-xl sm:text-3xl text-white my-4 font-display">
-          Hola, I am{" "}
-          <span className="text-[#f19050] font-bold text-4xl">
+         <span className="text-[#f19050] font-bold text-4xl">
             <Typewriter
               options={{
-                strings: ["Prajwal Prakash", "Prajwal P"],
+                strings: ["Hello!","¡Holá!","Bonjour!"],
                 autoStart: true,
                 loop: true,
                 deleteSpeed: 15,
               }}
             />
           </span>
-        </h1>
       </div>
+        <h1 className="text-xl sm:text-3xl text-white my-4 font-display">
+        {`I'm`}, Prajwal
+        </h1>
       <p className="text-white sm:full lg:w-3/4 text-base sm:text-xl font-body first-letter:text-2xl leading-relaxed lg:leading-1.8">
-        {`I'm a`} 2nd year CSE undergrad student from&nbsp;
+        {`A `}2nd year CSE undergrad student from&nbsp;
         <span className="text-[#50AEF1] font-bold">
           R V College Of Engineering
         </span>
@@ -70,25 +71,6 @@ export default function Home() {
         <span className="text-[#50AEF1] font-bold">Data Structures</span>
         &nbsp; as of now.
       </p>
-
-      <div className="flex flex-row justify-center items-center mt-4">
-        <span className="text-[#d9f489] font-bold text-ellipsis text-xl">
-          <Typewriter
-            options={{
-              strings: [
-                "Computer Programmer",
-                "Full Stack Developer",
-                "Problem Solver",
-              ],
-              autoStart: true,
-              loop: true,
-              deleteSpeed: 15,
-            }}
-          />
-        </span>
-        &nbsp; &nbsp;
-      </div>
-
       <div className="text-[#ecdcdc] my-8 flex bg-black rounded-lg bg-opacity-30 p-4 backdrop-filter backdrop-blur-md lg:w-1/4 justify-evenly">
         <a href="https://www.github.com/prajwalprakash3722" target="blank">
           <img
