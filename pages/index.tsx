@@ -49,6 +49,15 @@ export default function Home() {
         &nbsp; as of now.
       </p>
       <div className="text-[#ecdcdc] my-8 flex bg-black rounded-lg bg-opacity-30 p-4 backdrop-filter backdrop-blur-md lg:w-1/4 justify-evenly">
+        <a href="https://blog.devcoffee.me" target="blank">
+          <img
+            src="/icons/blogs.svg"
+            alt="Github"
+            className="h-8 w-8"
+            width={32}
+            height={32}
+          />
+        </a>
         <a href="https://www.github.com/prajwalprakash3722" target="blank">
           <img
             src="/icons/github.svg"
