@@ -1,34 +1,11 @@
 import Card, { Props } from "../components/Card";
 
-import { API_LINK } from "../Misc/api";
 import React from "react";
 import Typewriter from "typewriter-effect";
 /* eslint-disable @next/next/no-img-element */
-import axios from "axios";
 
 export default function Home() {
-  const [data, setData] = React.useState<Props[]>([
-    {
-      title: "",
-      description: "",
-      image: "",
-      link: "",
-    },
-  ]);
-
-  React.useEffect(() => {
-    axios
-      .get(API_LINK, {
-        headers: {},
-      })
-      .then((res) => {
-        setData(res.data);
-      })
-      .catch((err) => {
-        console.error(err.message);
-      });
-  }, []);
-
+ 
   return (
     <div className="relative container w-[80%] md:w-[60%] mx-auto py-[5rem] min-h-screen">
       <div className="logo mb-4 md:mb-12 h-24 w-24 p-1 sm:h-20 sm:w-20 rounded-full bg-gradient-to-r from flex items-center justify-center">
@@ -112,18 +89,6 @@ export default function Home() {
           />
         </a>
       </div>
-      {data && data.length > 1 && (
-        <div>
-          <h1 className="text-4xl text-center text-white my-4 font-display">
-            Blog
-          </h1>
-          <div className="grid grid-col-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {data.map((item, index) => (
-              <Card key={index} data={item} />
-            ))}
-          </div>
-        </div>
-      )}
       <div className="absolute flex bottom-0 p-4 text-center">
         <p className="text-[#bbb] font-body text-sm">
           Made using{" "}
