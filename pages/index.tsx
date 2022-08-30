@@ -1,5 +1,3 @@
-import Card, { Props } from "../components/Card";
-
 import React from "react";
 import Typewriter from "typewriter-effect";
 /* eslint-disable @next/next/no-img-element */
@@ -52,7 +50,7 @@ export default function Home() {
         <a href="https://blog.devcoffee.me" target="blank">
           <img
             src="/icons/blogs.svg"
-            alt="Github"
+            alt="blog"
             className="h-8 w-8"
             width={32}
             height={32}
