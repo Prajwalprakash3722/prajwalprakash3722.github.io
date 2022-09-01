@@ -8,7 +8,7 @@ export default function Home() {
     <div className="relative container w-[80%] md:w-[60%] mx-auto py-[5rem] min-h-screen">
       <div className="logo mb-4 md:mb-12 h-24 w-24 p-1 sm:h-20 sm:w-20 rounded-full bg-gradient-to-r from flex items-center justify-center">
         <img
-          src="/prajwal.PNG"
+          src="https://ik.imagekit.io/tf4mccdje/prajwal_Mjvs5REg4.png?ik-sdk-version=javascript-1.4.3&updatedAt=1662013248173"
           alt="Prajwal P"
           className="sm:h-[4.5rem] sm:w-[4.5rem] rounded-full object-cover"
           width={400}
@@ -16,20 +16,20 @@ export default function Home() {
         />
       </div>
       <div className="flex flex-row">
-         <span className="text-[#f19050] font-bold text-4xl">
-            <Typewriter
-              options={{
-                strings: ["Hello!","¡Holá!","Bonjour!"],
-                autoStart: true,
-                loop: true,
-                deleteSpeed: 15,
-              }}
-            />
-          </span>
+        <span className="text-[#f19050] font-bold text-4xl">
+          <Typewriter
+            options={{
+              strings: ["Hello!", "¡Holá!", "Bonjour!"],
+              autoStart: true,
+              loop: true,
+              deleteSpeed: 15,
+            }}
+          />
+        </span>
       </div>
-        <h1 className="text-xl sm:text-3xl text-white my-4 font-display">
+      <h1 className="text-xl sm:text-3xl text-white my-4 font-display">
         {`I'm`}, Prajwal
-        </h1>
+      </h1>
       <p className="text-white sm:full lg:w-3/4 text-base sm:text-xl font-body first-letter:text-2xl leading-relaxed lg:leading-1.8">
         {`A `}2nd year CSE undergrad student from&nbsp;
         <span className="text-[#50AEF1] font-bold">
