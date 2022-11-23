@@ -21,7 +21,7 @@ export default function Home() {
             options={{
               strings: ["Hello!", "¡Holá!", "Bonjour!"],
               autoStart: true,
-              loop: true,
+                 loop: true,
               deleteSpeed: 15,
             }}
           />
@@ -31,7 +31,7 @@ export default function Home() {
         {`I'm`}, Prajwal
       </h1>
       <p className="text-white sm:full lg:w-3/4 text-base sm:text-xl font-body first-letter:text-2xl leading-relaxed lg:leading-1.8">
-        {/* {`A `}3rd year CSE undergrad student from&nbsp;
+        {`A `}3rd year CSE undergrad student from&nbsp;
         <span className="text-[#50AEF1] font-bold">
           R V College Of Engineering
         </span>
@@ -44,7 +44,7 @@ export default function Home() {
         <span className="text-[#50AEF1] font-bold">Operating Systems</span>
         &nbsp;&&nbsp;
         <span className="text-[#50AEF1] font-bold">Data Structures</span>
-        &nbsp; as of now. */}
+        &nbsp; as of now.
         I am Currently an undergraduate student & avid book reader, who has
         messed up with pods,broke containers rather building them up, paid $92
         for AWS for making a small mistake, always eager to build/fix/break
