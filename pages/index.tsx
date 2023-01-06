@@ -37,19 +37,25 @@ export default function Home() {
         </span>
         .&nbsp;I like to develop pretty sustainable solutions using latest
         technologies.&nbsp;Till now Most of my work has been in&nbsp;
-        <span className="text-[#50AEF1] font-bold">Web Development</span>
+        <span className="text-[#50AEF1] font-bold">web </span>, 
+        <span className="text-[#50AEF1] font-bold"> building accessible systems</span>
         &nbsp;&&nbsp;
-        <span className="text-[#50AEF1] font-bold">Backend Engineering</span>
+        <span className="text-[#50AEF1] font-bold">backend Engineering</span>
         .&nbsp; I am very keenly interested in&nbsp;
-        <span className="text-[#50AEF1] font-bold">Operating Systems</span>
+        <span className="text-[#50AEF1] font-bold">operating Systems</span>
         &nbsp;&&nbsp;
-        <span className="text-[#50AEF1] font-bold">Data Structures</span>
+        <span className="text-[#50AEF1] font-bold">computer Networks</span>
         &nbsp; as of now.
-        I am Currently an undergraduate student & avid book reader, who has
-        messed up with pods,broke containers rather building them up, paid $92
-        for AWS for making a small mistake, always eager to build/fix/break
-        things & learn,currently interested in how scalable systems are built?
       </p>
+	<p className="mt-5 text-white sm:full lg:w-3/4 text-base sm:text-sm font-body first-letter:text-lg leading-relaxed lg:leading-1.8">
+	I have a wonderful course called 
+		<span className="text-blue-400"> Software Engineering (18IS55) </span> 
+	in the 5th Sem and I thought it would be a good idea to write about what I learnt so far, 
+	I host the notes at {' '} 
+            <a href="https://www.se.devcoffee.me" target="blank">
+		<span className="text-blue-400"> se.devcoffee.me</span>
+            </a>
+	</p>
       <div className="text-[#ecdcdc] my-8 flex bg-black rounded-lg bg-opacity-30 p-4 backdrop-filter backdrop-blur-md lg:w-1/4 justify-evenly">
         <a href="https://blog.devcoffee.me" target="blank">
           <img
