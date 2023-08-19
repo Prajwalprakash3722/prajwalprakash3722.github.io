@@ -28,7 +28,7 @@ export default function Home() {
         </span>
       </div>
       <h1 className="text-xl sm:text-3xl text-white my-4 font-display">
-        {`I'm`}, Prajwal
+         {`I'm`}, Prajwal
       </h1>
       <p className="text-white sm:full lg:w-3/4 text-base sm:text-xl font-body first-letter:text-2xl leading-relaxed lg:leading-1.8">
         {`A `}3rd year CSE undergrad student from&nbsp;
@@ -38,8 +38,6 @@ export default function Home() {
         .&nbsp;I like to develop pretty sustainable solutions using latest
         technologies.&nbsp;Till now Most of my work has been in&nbsp;
         <span className="text-[#50AEF1] font-bold">web </span>, 
-        <span className="text-[#50AEF1] font-bold"> building accessible systems</span>
-        &nbsp;&&nbsp;
         <span className="text-[#50AEF1] font-bold">backend Engineering</span>
         .&nbsp; I am very keenly interested in&nbsp;
         <span className="text-[#50AEF1] font-bold">operating Systems</span>
@@ -47,15 +45,6 @@ export default function Home() {
         <span className="text-[#50AEF1] font-bold">computer Networks</span>
         &nbsp; as of now.
       </p>
-	<p className="mt-5 text-white sm:full lg:w-3/4 text-base sm:text-sm font-body first-letter:text-lg leading-relaxed lg:leading-1.8">
-	I have a wonderful course called 
-		<span className="text-blue-400"> Software Engineering (18IS55) </span> 
-	in the 5th Sem and I thought it would be a good idea to write about what I learnt so far, 
-	I host the notes at {' '} 
-            <a href="https://www.se.devcoffee.me" target="blank">
-		<span className="text-blue-400"> se.devcoffee.me</span>
-            </a>
-	</p>
       <div className="text-[#ecdcdc] my-8 flex bg-black rounded-lg bg-opacity-30 p-4 backdrop-filter backdrop-blur-md lg:w-1/4 justify-evenly">
         <a href="https://blog.devcoffee.me" target="blank">
           <img
@@ -104,6 +93,9 @@ export default function Home() {
             width={32}
             height={32}
           />
+        </a>
+        <a href="https://www.github.com/prajwalprakash3722/dotfiles" target="blank">
+          dotfiles
         </a>
       </div>
       <div className="absolute flex bottom-0 p-4 text-center">
