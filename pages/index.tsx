@@ -31,7 +31,7 @@ export default function Home() {
          {`I'm`}, Prajwal
       </h1>
       <p className="text-white sm:full lg:w-3/4 text-base sm:text-xl font-body first-letter:text-2xl leading-relaxed lg:leading-1.8">
-        {`A `}3rd year CSE undergrad student from&nbsp;
+        {`A `}4th year CSE undergrad student from&nbsp;
         <span className="text-[#50AEF1] font-bold">
           R V College Of Engineering
         </span>
