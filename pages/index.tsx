@@ -3,7 +3,7 @@ import Typewriter from "typewriter-effect";
 /* eslint-disable @next/next/no-img-element */
 
 export default function Home() {
- 
+
   return (
     <div className="relative container w-[80%] md:w-[60%] mx-auto py-[5rem] min-h-screen">
       <div className="logo mb-4 md:mb-12 h-24 w-24 p-1 sm:h-20 sm:w-20 rounded-full bg-gradient-to-r from flex items-center justify-center">
@@ -21,29 +21,30 @@ export default function Home() {
             options={{
               strings: ["Hello!", "¡Holá!", "Bonjour!"],
               autoStart: true,
-                 loop: true,
+              loop: true,
               deleteSpeed: 15,
             }}
           />
         </span>
       </div>
       <h1 className="text-xl sm:text-3xl text-white my-4 font-display">
-         {`I'm`}, Prajwal
+        I'm Prajwal
       </h1>
       <p className="text-white sm:full lg:w-3/4 text-base sm:text-xl font-body first-letter:text-2xl leading-relaxed lg:leading-1.8">
-        {`A `}4th year CSE undergrad student from&nbsp;
-        <span className="text-[#50AEF1] font-bold">
-          R V College Of Engineering
-        </span>
-        .&nbsp;I like to develop pretty sustainable solutions using latest
-        technologies.&nbsp;Till now Most of my work has been in&nbsp;
-        <span className="text-[#50AEF1] font-bold">web </span>, 
-        <span className="text-[#50AEF1] font-bold">backend Engineering</span>
-        .&nbsp; I am very keenly interested in&nbsp;
-        <span className="text-[#50AEF1] font-bold">operating Systems</span>
-        &nbsp;&&nbsp;
-        <span className="text-[#50AEF1] font-bold">computer Networks</span>
-        &nbsp; as of now.
+        I'm a graduate from
+        <span className="text-[#50AEF1] font-bold">R V College Of Engineering</span>.
+        I like to develop pretty sustainable solutions using latest technologies.
+        Most of my work has been in
+        <span className="text-[#50AEF1] font-bold">{` web`}</span> and
+        <span className="text-[#50AEF1] font-bold">{` backend engineering`}</span>.
+        I'm very interested in
+        <span className="text-[#50AEF1] font-bold">{` operating systems`}</span> and
+        <span className="text-[#50AEF1] font-bold">{` computer networks`}</span>.
+      </p>
+      <p className="text-white sm:full lg:w-3/4 text-base sm:text-xl font-body leading-relaxed lg:leading-1.8 mt-4">
+        Currently, I work as an <span className="text-[#50AEF1] font-bold">{` SRE @ PhonePe`}</span>.
+        I chose SRE because it offers a complete view of production systems,
+        flexibility in role, and the opportunity to impact a wide range of internal customers.
       </p>
       <div className="text-[#ecdcdc] my-8 flex bg-black rounded-lg bg-opacity-30 p-4 backdrop-filter backdrop-blur-md lg:w-1/4 justify-evenly">
         <a href="https://blog.devcoffee.me" target="blank">
