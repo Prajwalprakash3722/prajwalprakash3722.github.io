@@ -3,7 +3,6 @@ import Typewriter from "typewriter-effect";
 /* eslint-disable @next/next/no-img-element */
 
 export default function Home() {
-
   return (
     <div className="relative container w-[80%] md:w-[60%] mx-auto py-[5rem] min-h-screen">
       <div className="logo mb-4 md:mb-12 h-24 w-24 p-1 sm:h-20 sm:w-20 rounded-full bg-gradient-to-r from flex items-center justify-center">
@@ -28,16 +27,16 @@ export default function Home() {
         </span>
       </div>
       <h1 className="text-xl sm:text-3xl text-white my-4 font-display">
-        I'm Prajwal
+        I&apos;m Prajwal
       </h1>
       <p className="text-white sm:full lg:w-3/4 text-base sm:text-xl font-body first-letter:text-2xl leading-relaxed lg:leading-1.8">
-        I'm a graduate from
+        I&apos;m a graduate from
         <span className="text-[#50AEF1] font-bold">R V College Of Engineering</span>.
         I like to develop pretty sustainable solutions using latest technologies.
         Most of my work has been in
         <span className="text-[#50AEF1] font-bold">{` web`}</span> and
         <span className="text-[#50AEF1] font-bold">{` backend engineering`}</span>.
-        I'm very interested in
+        I&apos;m very interested in
         <span className="text-[#50AEF1] font-bold">{` operating systems`}</span> and
         <span className="text-[#50AEF1] font-bold">{` computer networks`}</span>.
       </p>
