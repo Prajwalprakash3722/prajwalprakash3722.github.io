@@ -1,9 +1,9 @@
 /* eslint-disable @next/next/no-page-custom-font */
-import "../styles/globals.css";
-import Head from "next/head";
-import type { AppProps } from "next/app";
-import { ThemeProvider } from "next-themes";
-import React from "react";
+import '../styles/globals.css';
+import Head from 'next/head';
+import type { AppProps } from 'next/app';
+import { ThemeProvider } from 'next-themes';
+import React from 'react';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -18,7 +18,10 @@ function MyApp({ Component, pageProps }: AppProps) {
           rel="stylesheet"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="I make servers go beep boop. SRE, traveller, hiker, chef. Thoughts on engineering, philosophy, and system design." />
+        <meta
+          name="description"
+          content="I make servers go beep boop. SRE, traveller, hiker, chef. Thoughts on engineering, philosophy, and system design."
+        />
         <meta
           name="keywords"
           content="SRE, site reliability engineering, engineering, philosophy, system design, travel, hiking, cooking, open source, unix, privacy, infrastructure"
@@ -26,11 +29,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="author" content="Prajwal" />
       </Head>
       {/* @ts-ignore */}
-      <ThemeProvider 
-        attribute="class" 
-        defaultTheme="system" 
-        enableSystem
-      >
+      <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
         <div className="min-h-screen bg-white dark:bg-black transition-colors">
           <div className="fixed inset-0 bg-gradient-to-br from-gray-100 via-white to-gray-100 dark:from-gray-900 dark:via-black dark:to-gray-900 opacity-50"></div>
           <div className="relative z-10">

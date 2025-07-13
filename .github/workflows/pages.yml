@@ -2,7 +2,7 @@ name: Deploy Next.js site to GitHub Pages
 
 on:
   push:
-    branches: ["master"]
+    branches: ['master']
   workflow_dispatch:
 
 permissions:
@@ -11,7 +11,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
+  group: 'pages'
   cancel-in-progress: true
 
 jobs:
@@ -32,10 +32,14 @@ jobs:
         run: npm ci
 
       - name: Build project
-        run: npm run build
+        run: NODE_OPTIONS='--openssl-legacy-provider' npm run build
+        env:
+          NODE_OPTIONS: '--openssl-legacy-provider'
 
       - name: Export static site
-        run: npm run export
+        run: NODE_OPTIONS='--openssl-legacy-provider' npm run export
+        env:
+          NODE_OPTIONS: '--openssl-legacy-provider'
 
       - name: Add .nojekyll
         run: touch ./out/.nojekyll
