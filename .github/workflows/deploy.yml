@@ -1,40 +1,52 @@
-# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
-# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
-
-name: Node.js CI
+name: Deploy Next.js app to GitHub Pages
 
 on:
   push:
     branches: [master]
-  pull_request:
-    branches: [master]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [14.x]
-
     steps:
-      - uses: actions/checkout@v3
-      - name: Use Node.js ${{ matrix.node-version }}
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: 18
+          cache: npm
 
-      - name: Installing my packages
+      - name: Install dependencies
         run: npm ci
 
-      - name: Build my App
+      - name: Build project
         run: npm run build
-      - run: npm run export
-      - run: touch ./out/.nojekyll
 
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4.5.0
+      - name: Export static site
+        run: npm run export
+
+      - name: Add .nojekyll
+        run: touch ./out/.nojekyll
+
+      - name: Upload static site as artifact
+        uses: actions/upload-pages-artifact@v2
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          branch: gh-pages
-          folder: out
+          path: ./out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
