@@ -1,125 +1,97 @@
 import React from "react";
-import Typewriter from "typewriter-effect";
 /* eslint-disable @next/next/no-img-element */
 
 export default function Home() {
   return (
-    <div className="relative container w-[80%] md:w-[60%] mx-auto py-[5rem] min-h-screen">
-      <div className="logo mb-4 md:mb-12 h-24 w-24 p-1 sm:h-20 sm:w-20 rounded-full bg-gradient-to-r from flex items-center justify-center">
-        <img
-          src="https://ik.imagekit.io/tf4mccdje/prajwal_Mjvs5REg4.png?ik-sdk-version=javascript-1.4.3&updatedAt=1662013248173"
-          alt="Prajwal P"
-          className="sm:h-[4.5rem] sm:w-[4.5rem] rounded-full object-cover"
-          width={400}
-          height={400}
-        />
-      </div>
-      <div className="flex flex-row">
-        <span className="text-[#f19050] font-bold text-4xl">
-          <Typewriter
-            options={{
-              strings: ["Hello!", "¡Holá!", "Bonjour!"],
-              autoStart: true,
-              loop: true,
-              deleteSpeed: 15,
-            }}
-          />
-        </span>
-      </div>
-      <h1 className="text-xl sm:text-3xl text-white my-4 font-display">
-        I&apos;m Prajwal
-      </h1>
-      <p className="text-white sm:full lg:w-3/4 text-base sm:text-xl font-body first-letter:text-2xl leading-relaxed lg:leading-1.8">
-        I&apos;m a graduate from
-        <span className="text-[#50AEF1] font-bold">R V College Of Engineering</span>.
-        I like to develop pretty sustainable solutions using latest technologies.
-        Most of my work has been in
-        <span className="text-[#50AEF1] font-bold">{` web`}</span> and
-        <span className="text-[#50AEF1] font-bold">{` backend engineering`}</span>.
-        I&apos;m very interested in
-        <span className="text-[#50AEF1] font-bold">{` operating systems`}</span> and
-        <span className="text-[#50AEF1] font-bold">{` computer networks`}</span>.
-      </p>
-      <p className="text-white sm:full lg:w-3/4 text-base sm:text-xl font-body leading-relaxed lg:leading-1.8 mt-4">
-        Currently, I work as an <span className="text-[#50AEF1] font-bold">{` SRE @ PhonePe`}</span>.
-        I chose SRE because it offers a complete view of production systems,
-        flexibility in role, and the opportunity to impact a wide range of internal customers.
-      </p>
-      <div className="text-[#ecdcdc] my-8 flex bg-black rounded-lg bg-opacity-30 p-4 backdrop-filter backdrop-blur-md lg:w-1/4 justify-evenly">
-        <a href="https://blog.devcoffee.me" target="blank">
+    <div className="max-w-2xl mx-auto px-6 py-16 min-h-screen">
+      {/* Header */}
+      <header className="mb-16">
+        <div className="flex items-center gap-4 mb-8">
           <img
-            src="/icons/blogs.svg"
-            alt="blog"
-            className="h-8 w-8"
-            width={32}
-            height={32}
+            src="https://ik.imagekit.io/tf4mccdje/prajwal_Mjvs5REg4.png?ik-sdk-version=javascript-1.4.3&updatedAt=1662013248173"
+            alt="Prajwal P"
+            className="w-16 h-16 rounded-full object-cover border border-gray-300 dark:border-gray-700"
+            width={64}
+            height={64}
           />
-        </a>
-        <a href="https://www.github.com/prajwalprakash3722" target="blank">
-          <img
-            src="/icons/github.svg"
-            alt="Github"
-            className="h-8 w-8"
-            width={32}
-            height={32}
-          />
-        </a>
-        <a href="mailto:prajwalprakash3722@gmail.com" target="blank">
-          <img
-            src="/icons/gmail.png"
-            alt="Gmail"
-            className="h-8 w-8"
-            width={32}
-            height={32}
-          />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/prajwal-prakash-a3b9931b3/"
-          target="blank"
-        >
-          <img
-            src="/icons/linkedin.png"
-            alt="LinkedIn"
-            className="h-8 w-8"
-            width={32}
-            height={32}
-          />
-        </a>
-        <a href="/Prajwal_P.pdf" target="blank">
-          <img
-            src="/icons/resume.png"
-            alt="Resume"
-            className="h-8 w-8"
-            width={32}
-            height={32}
-          />
-        </a>
-        <a href="https://www.github.com/prajwalprakash3722/dotfiles" target="blank">
-          dotfiles
-        </a>
-      </div>
-      <div className="absolute flex bottom-0 p-4 text-center">
-        <p className="text-[#bbb] font-body text-sm">
-          Made using{" "}
-          <span className="text-[#50AEF1]">
-            <a href="https://nextjs.org/" target="blank">
-              Next.JS
-            </a>
-          </span>
-          ,&nbsp;
-          <span className="text-[#50AEF1]">
-            <a href="https://tailwindcss.com/" target="blank">
-              Tailwind
-            </a>
-          </span>
-          ,&nbsp;
-          <span className="text-[#50AEF1]">
-            <a href="https://www.typescriptlang.org/" target="blank">
-              TypeScript
-            </a>
-          </span>
-        </p>
-      </div>
+          <div>
+            <h1 className="text-2xl font-bold text-gray-900 dark:text-white mb-1">Prajwal</h1>
+            <p className="text-gray-600 dark:text-gray-400 text-sm">SRE @ PhonePe</p>
+          </div>
+        </div>
+      </header>
+
+      {/* Main Content */}
+      <main className="space-y-8">
+        <section>
+          <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
+            I make servers go <span className="text-green-600 dark:text-green-400 font-mono">beep boop</span>. 
+            Also a hobbyist traveller, part-time hiker, and a full-time chef. This is my personal page, 
+            where I post my thoughts on engineering, philosophy, and system design.
+          </p>
+        </section>
+
+        <section>
+          <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+            Outside of work I&apos;m interested in everything *nix, open-source projects, 
+            privacy in tech, and infrastructure that just clicks. In my free time, I get lost in cooking, 
+            read the occasional book. Want to see what I&apos;m currently working on? 
+            Check out <a href="/now" className="text-blue-600 dark:text-blue-400 hover:text-blue-500 dark:hover:text-blue-300 underline">what I&apos;m up to now</a>.
+          </p>
+        </section>
+
+        <section>
+          <p className="text-gray-700 dark:text-gray-300 leading-relaxed italic">
+            I believe that the world is not only made up of atoms, but it is also made up of stories. 
+            Each and everyone has a unique and different story—the silent struggle behind the story 
+            is what brings us together.
+          </p>
+        </section>
+
+        {/* Interesting fact */}
+        <section className="bg-gray-50 dark:bg-gray-900/50 border border-gray-200 dark:border-gray-800 rounded-lg p-6">
+          <h3 className="text-gray-900 dark:text-white font-semibold mb-2">Something interesting about me</h3>
+          <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+            I wear a cyborg over my ear—I am profoundly deaf. Technology doesn&apos;t just power 
+            the servers I work with; it&apos;s literally part of how I navigate the world.
+          </p>
+        </section>
+      </main>
+      {/* Links */}
+      <footer className="mt-16 pt-8 border-t border-gray-200 dark:border-gray-800">
+        <div className="flex flex-wrap gap-6 text-sm">
+          <a href="https://blog.devcoffee.me" target="_blank" rel="noopener noreferrer" 
+             className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">
+            Blog
+          </a>
+          <a href="https://www.github.com/prajwalprakash3722" target="_blank" rel="noopener noreferrer"
+             className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">
+            GitHub
+          </a>
+          <a href="mailto:prajwalprakash3722@gmail.com" target="_blank" rel="noopener noreferrer"
+             className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">
+            Email
+          </a>
+          <a href="https://www.linkedin.com/in/prajwal-prakash-a3b9931b3/" target="_blank" rel="noopener noreferrer"
+             className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">
+            LinkedIn
+          </a>
+          <a href="/Prajwal_P.pdf" target="_blank" rel="noopener noreferrer"
+             className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">
+            Resume
+          </a>
+          <a href="https://www.github.com/prajwalprakash3722/dotfiles" target="_blank" rel="noopener noreferrer"
+             className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">
+            Dotfiles
+          </a>
+        </div>
+        
+        <div className="mt-8 pt-6 border-t border-gray-200 dark:border-gray-800">
+          <p className="text-gray-500 dark:text-gray-500 text-xs">
+            Built with Next.js & Tailwind CSS
+          </p>
+        </div>
+      </footer>
     </div>
   );
 }

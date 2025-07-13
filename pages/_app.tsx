@@ -1,12 +1,15 @@
 /* eslint-disable @next/next/no-page-custom-font */
 import "../styles/globals.css";
 import Head from "next/head";
+import type { AppProps } from "next/app";
+import { ThemeProvider } from "next-themes";
+import React from "react";
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Hey !</title>
+        <title>Prajwal - SRE, Traveller, Chef</title>
         <link rel="icon" href="/icon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -15,19 +18,26 @@ function MyApp({ Component, pageProps }) {
           rel="stylesheet"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Prajwal's Personal Blog" />
+        <meta name="description" content="I make servers go beep boop. SRE, traveller, hiker, chef. Thoughts on engineering, philosophy, and system design." />
         <meta
           name="keywords"
-          content="blog, personal, personal blog, prajwal, dev,software, lab, self-documentation"
+          content="SRE, site reliability engineering, engineering, philosophy, system design, travel, hiking, cooking, open source, unix, privacy, infrastructure"
         />
-        <meta name="author" content="PrajwalPrakash3722" />
-        <meta name="theme-color" content="#000000" />
+        <meta name="author" content="Prajwal" />
       </Head>
-      <div className="h-screen w-screen bg-[#151515] fixed inset-0 z-[-1]">
-        <span className="absolute top-[-7rem] lg:top-[-80%] lg:right-[-10vw] h-[200px] w-full lg:h-[600px] lg:w-[600px] bg-gradient-to-r from-[#505bf1] to-[#EE5DB4] filter blur-[100px] opacity-25 rounded-full"></span>
-        <span className="absolute bottom-[-9rem] lg:bottom-[-80%] left-[-10vw] h-[200px] w-full lg:h-[600px] lg:w-[600px] bg-gradient-to-r from-[#505bf1] to-[#EE5DB4] filter blur-[100px] opacity-25 rounded-full"></span>
-      </div>
-      <Component {...pageProps} />
+      {/* @ts-ignore */}
+      <ThemeProvider 
+        attribute="class" 
+        defaultTheme="system" 
+        enableSystem
+      >
+        <div className="min-h-screen bg-white dark:bg-black transition-colors">
+          <div className="fixed inset-0 bg-gradient-to-br from-gray-100 via-white to-gray-100 dark:from-gray-900 dark:via-black dark:to-gray-900 opacity-50"></div>
+          <div className="relative z-10">
+            <Component {...pageProps} />
+          </div>
+        </div>
+      </ThemeProvider>
     </>
   );
 }
