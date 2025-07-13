@@ -1,41 +1,55 @@
-name: Deploy Next.js app to GitHub Pages
+name: Deploy Next.js site to GitHub Pages
 
 on:
   push:
-    branches: [master]
+    branches: [master] # Change to your default branch if needed
+  workflow_dispatch:
 
 permissions:
   contents: read
   pages: write
   id-token: write
 
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Detect package manager
+        id: detect-package-manager
+        run: |
+          if [ -f "${{ github.workspace }}/yarn.lock" ]; then
+            echo "manager=yarn" >> $GITHUB_OUTPUT
+            echo "command=install" >> $GITHUB_OUTPUT
+            echo "runner=yarn" >> $GITHUB_OUTPUT
+          elif [ -f "${{ github.workspace }}/package-lock.json" ]; then
+            echo "manager=npm" >> $GITHUB_OUTPUT
+            echo "command=ci" >> $GITHUB_OUTPUT
+            echo "runner=npx --no-install" >> $GITHUB_OUTPUT
+          else
+            echo "Unable to determine package manager"
+            exit 1
+          fi
+
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: 18
-          cache: npm
+          node-version: "20"
+          cache: ${{ steps.detect-package-manager.outputs.manager }}
 
       - name: Install dependencies
-        run: npm ci
+        run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
 
-      - name: Build project
-        run: npm run build
+      - name: Build with Next.js
+        run: ${{ steps.detect-package-manager.outputs.runner }} next build && ${{ steps.detect-package-manager.outputs.runner }} next export && touch ./out/.nojekyll
 
-      - name: Export static site
-        run: npm run export
-
-      - name: Add .nojekyll
-        run: touch ./out/.nojekyll
-
-      - name: Upload static site as artifact
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
           path: ./out
