@@ -1,0 +1,96 @@
+{
+  "Dosa": [
+    {
+      "name": "CTR (Central Tiffin Room)",
+      "rating": 9.1,
+      "latitude": 12.9716,
+      "longitude": 77.5946
+    },
+    {
+      "name": "By 2 Coffee",
+      "rating": 9.0,
+      "latitude": 12.9478,
+      "longitude": 77.5669
+    },
+    {
+      "name": "Vidyarthi Bhavan",
+      "rating": 8.3,
+      "latitude": 12.9343,
+      "longitude": 77.5624
+    },
+    {
+      "name": "Dwaraka Hotel (Khali Dosa)",
+      "rating": 8.0,
+      "latitude": 12.9343,
+      "longitude": 77.5624
+    },
+    {
+      "name": "Cafe Khadya",
+      "rating": 8.0,
+      "latitude": 12.925,
+      "longitude": 77.59
+    },
+    {
+      "name": "Arogya Aahara",
+      "rating": 8.0,
+      "latitude": 12.92,
+      "longitude": 77.58
+    },
+    {
+      "name": "Taaza Thindi",
+      "rating": 8.0,
+      "latitude": 12.925,
+      "longitude": 77.58
+    },
+    {
+      "name": "The President Hotel, Kumarapark (Mulbagal Dosa)",
+      "rating": 8.0,
+      "latitude": 12.99987200719333,
+      "longitude": 77.5886671398895
+    },
+    {
+      "name": "The Rameshwaram Cafe @ Rajajinagar",
+      "rating": 8.0,
+      "latitude": 13.013246112642808,
+      "longitude": 77.56549282687045
+    },
+    {
+      "name": "Chikkanna Tiffin Room",
+      "rating": 8.8,
+      "latitude": 12.991234224868512,
+      "longitude": 77.57712286232965
+    },
+    {
+      "name": "Mavalli Tiffin Rooms (MTR)",
+      "rating": 7.8,
+      "latitude": 12.9343,
+      "longitude": 77.5624
+    },
+    {
+      "name": "Umesh Dosa Point",
+      "rating": 8.2,
+      "latitude": 12.989115010743232,
+      "longitude": 77.57827238652757
+    },
+    {
+      "name": "Shree Sai Dosa Center",
+      "rating": 8.8,
+      "latitude": 12.9975,
+      "longitude": 77.5538
+    },
+    {
+      "name": "SLV Coffee Bar",
+      "rating": 8.4,
+      "latitude": 12.9682,
+      "longitude": 77.534
+    }
+  ],
+  "Pizza": [
+    {
+      "name": "Toscano",
+      "rating": 9.0,
+      "latitude": 13.011503894690241,
+      "longitude": 77.55570087728519
+    }
+  ]
+}

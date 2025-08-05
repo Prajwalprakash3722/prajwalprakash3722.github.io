@@ -39,9 +39,9 @@ export default function Now() {
         <div className="flex items-center justify-between mb-8">
           <h1 className="text-3xl font-bold text-gray-900 dark:text-white">Now</h1>
           <Link href="/">
-            <a className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">
+            <span className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors cursor-pointer">
               ← Back
-            </a>
+            </span>
           </Link>
         </div>
 

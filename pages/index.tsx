@@ -22,7 +22,6 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Main Content */}
       <main className="space-y-8">
         <section>
           <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
@@ -39,9 +38,9 @@ export default function Home() {
             tech, and infrastructure that just clicks. In my free time, I get lost in cooking, read
             the occasional book. Want to see what I&apos;m currently working on? Check out{' '}
             <Link href="/now">
-              <a className="text-blue-600 dark:text-blue-400 hover:text-blue-500 dark:hover:text-blue-300 underline">
+              <span className="text-blue-600 dark:text-blue-400 hover:text-blue-500 dark:hover:text-blue-300 underline cursor-pointer">
                 what I&apos;m up to now
-              </a>
+              </span>
             </Link>
             .
           </p>
@@ -55,7 +54,6 @@ export default function Home() {
           </p>
         </section>
 
-        {/* Interesting fact */}
         <section className="bg-gray-50 dark:bg-gray-900/50 border border-gray-200 dark:border-gray-800 rounded-lg p-6">
           <h3 className="text-gray-900 dark:text-white font-semibold mb-2">
             Something interesting about me
@@ -65,8 +63,22 @@ export default function Home() {
             servers I work with; it&apos;s literally part of how I navigate the world.
           </p>
         </section>
+
+        <section className="bg-white dark:bg-gray-900/50 border border-gray-200 dark:border-gray-800 rounded-lg p-6 mt-12">
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
+            Food Leaderboard
+          </h2>
+          <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+            I maintain a personal leaderboard of my favorite foods from across Bengaluru/India —
+            rated and ranked by taste and quality.
+          </p>
+          <Link href="/foods">
+            <span className="inline-block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-500 transition cursor-pointer">
+              Explore the Food Leaderboard
+            </span>
+          </Link>
+        </section>
       </main>
-      {/* Links */}
       <footer className="mt-16 pt-8 border-t border-gray-200 dark:border-gray-800">
         <div className="flex flex-wrap gap-6 text-sm">
           <a
