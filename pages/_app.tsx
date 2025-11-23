@@ -4,6 +4,7 @@ import Head from 'next/head';
 import type { AppProps } from 'next/app';
 import { ThemeProvider } from 'next-themes';
 import React from 'react';
+import CursorTrail from '../components/CursorTrail';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -28,6 +29,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
         <meta name="author" content="Prajwal" />
       </Head>
+      <CursorTrail />
       {/* @ts-ignore */}
       <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
         <div className="min-h-screen bg-white dark:bg-black transition-colors">
